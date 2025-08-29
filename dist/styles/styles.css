@@ -1,0 +1,128 @@
+:root {
+  --dark-gray: #6c727f;
+  --gray: #e5e7eb;
+  --off-white: #f9fafb;
+  --white: #ffffff;
+  --black: #000000;
+  --blue: #284bce;
+  --darker-gray: #394150;
+  --shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.03),
+    0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: var(--off-white);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+/* HEADER */
+header {
+  padding: 2em 0 1.5em;
+  /* background: red; */
+}
+
+.logo-img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* MAIN */
+.title {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--dark-gray);
+  margin: 1.5rem 0 4rem;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.join-newsletter {
+  text-align: center;
+}
+
+#subscribe-form {
+  background-color: var(--white);
+  max-width: 570px;
+  margin: 0 auto;
+  padding: 1.5em;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+
+.user-input,
+.submit-btn {
+  display: block;
+  padding: 1.5em 1em;
+  width: 100%;
+  font-family: inherit;
+  border-radius: 12px;
+}
+
+.user-input {
+  border: 1px solid var(--gray);
+  outline: none;
+  color: var(--darker-gray);
+  background-color: var(--off-white);
+  font-weight: 500;
+}
+
+.user-input::placeholder {
+  text-align: center;
+}
+
+.user-input:focus {
+  border: 1px solid var(--dark-gray);
+}
+
+.submit-btn {
+  border: none;
+  outline: none;
+  background-color: var(--blue);
+  font-weight: 600;
+  color: var(--white);
+  margin: 1.5rem 0;
+}
+
+.form-helper-text {
+  font-size: 0.875rem;
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+/* FOOTER */
+.author-info {
+  font-size: 0.625rem;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+  color: var(--blue);
+  font-weight: 500;
+}
